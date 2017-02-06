@@ -5,5 +5,5 @@ currentBuild.setDescription(description)
 node {
   stage ('Development') { echo 'Dev' }
   stage ('Testing') { echo 'QA' }
-  stage ('Producation') { echo 'Live' }
+  stage ('Production') { echo 'Live' }
 }
