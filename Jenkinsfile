@@ -16,7 +16,7 @@ echo "${env.CHANGE_ID}"
 def PR_NO = "${env.CHANGE_ID}"
 echo PR_NO
 //echo a(href:'http://groovy.codehaus.org', "Groovy")
-def description = a(href:'http://groovy.codehaus.org', "Pull Request")
+def description =  <a href='https://github.com/sbb4528/LinkToPR/pulls/PR_NO'> Pull Request </a>
 currentBuild.setDescription(description)
 //Jenkins.instance.getItem(jobName.split('/')[0]).description = "<a href='https://github.com/sbb4528/LinkToPR/pulls/$PR_NO'> Hello </a>"
 node {
