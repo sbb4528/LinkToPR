@@ -11,8 +11,8 @@
 //def description = "<a href='https://github.snei.sony.com/sbolleddu/Multibranch-ci-test/pulls/$PULL_REQUEST_NO'> PR </a>"
 //currentBuild.setDescription(description)
 
-echo ${env.JOB_NAME}
-echo ${env.CHANGE_ID}
+echo "${env.JOB_NAME}"
+echo "${env.CHANGE_ID}"
 node {
   stage ('Development') { echo 'Dev' }
   stage ('Testing') { echo 'QA' }
