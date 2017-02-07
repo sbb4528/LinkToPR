@@ -3,6 +3,7 @@ node {
   stage ('Testing') { echo 'QA' }
   stage ('Production') { echo 'Live' }
 }
+echo 'git rev-parse HEAD'
 def jobName = "${env.JOB_NAME}"
 GIT_COMMIT = sh (
    script: 'git rev-parse HEAD',
