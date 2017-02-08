@@ -1,8 +1,3 @@
-node {
-  stage ('Development') { echo 'Dev' }
-  stage ('Testing') { echo 'QA' }
-  stage ('Production') { echo 'Live' }
-}
 def jobName = "${env.JOB_NAME}"
 GIT_COMMIT = sh (
 script: 'git rev-parse HEAD',
