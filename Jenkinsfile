@@ -4,7 +4,7 @@ node {
   stage ('Production') { echo 'Live' }
 def jobName = "${env.JOB_NAME}"
 GIT_COMMIT = sh (
-script: 'git rev-parse HEAD',
+script: 'ls -lart',
 returnStdout: true
 ).trim()
 echo "Git committer email: ${GIT_COMMIT}"
