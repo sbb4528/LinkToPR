@@ -12,5 +12,5 @@ returnStdout: true
 echo "Git committer email: ${GIT_COMMIT}"
 currentBuild.description = "<a href='https://github.com/sbb4528/LinkToPR/commit/$GIT_COMMIT'>PR</a>"
 Jenkins.instance.getItem(jobName.split('/')[0]).description = "<a href='https://github.com/sbb4528/LinkToPR/commit/$GIT_COMMIT'>PR</a>"
-Jenkins.instance.getItem(jobName.split('/')[0]).getItem("${env.BRANCH_NAME}").description = "<a href='https://github.com/sbb4528/LinkToPR/commit/$GIT_COMMIT'>Hello</a>"
+Jenkins.instance.getItem(jobName.split('/')[0]).getItem("${env.BRANCH_NAME}").description = "<a href='https://github.com/sbb4528/LinkToPR/commit/$GIT_COMMIT'>PR</a>"
 }
